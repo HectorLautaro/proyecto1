@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Card } from 'react-bootstrap'
 import { CardGroup } from 'react-bootstrap'
+import ItemCount from './ItemCount.js'
 
 function ItemListContainer() {
     return (
@@ -16,7 +17,7 @@ function ItemListContainer() {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted"></small>
+            <ItemCount/>
           </Card.Footer>
         </Card>
         <Card>
@@ -29,7 +30,7 @@ function ItemListContainer() {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted"></small>
+            <ItemCount/>
           </Card.Footer>
         </Card>
         <Card>
@@ -43,7 +44,7 @@ function ItemListContainer() {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted"></small>
+            <ItemCount/>
           </Card.Footer>
         </Card>
       </CardGroup>         
