@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, } from "react";
 import 'bootstrap/dist/css/bootstrap.css'
-import Button from "./button";
+import { Button } from 'react-bootstrap'
 
-export default function CardComponentHooks(props) {
+export default function Counter(props) {
   const [count, setCount] = useState(0);
-  const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
 
   return (
     <React.Fragment>
-      <h3>contador: {count}</h3>
+      <h5>contador: {count}</h5>
       {props.count2}
-      <Button text="sumar" cuandohagoClick={() => setCount(count + 1)} />
-      <Button text="restar" cuandohagoClick={() => setCount(count - 1)} />
+      <Button variant="info" className= 'm-1' onClick={() => setCount(count + 1)}>Sumar</Button>
+      <Button variant="info" className= 'm-1' onClick={() => setCount(count - 1)}>Restar</Button>
     </React.Fragment>
   );
 }
